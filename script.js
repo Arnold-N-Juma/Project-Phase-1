@@ -7,7 +7,7 @@ const bookData = {
 };
 
 function loadBooks() {
-  fetch('http://localhost:3000/books') 
+  fetch('https://blog-javascript-02ip.onrender.com/books') 
       .then(response => response.json())
       .then(data => {
           // Update the bookData object with the loaded data.
@@ -22,7 +22,7 @@ function loadBooks() {
 // Function to save the updated book data back to db.json.
 function saveBooks(id) {
   const selectedBook = document.querySelector(`#bookList li[data-id="${id}"]`);
-  fetch(`http://localhost:3000/books`, {
+  fetch(`https://blog-javascript-02ip.onrender.com/books`, {
       method: 'PUT', // Using PUT to update the data on the server
       body: JSON.stringify(bookData.books),
       headers: {
