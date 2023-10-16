@@ -1,3 +1,9 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+    console.log("DOM fully loaded and parsed");
+  });
+
+
+
 const bookList = document.getElementById("bookList");
 
 // Function to loan a book
@@ -97,4 +103,4 @@ function displayBooks(books) {
 }
 
 // Initial call to load and display books
-loadBooks(); // Call this function to load and display books
+loadBooks(); 
